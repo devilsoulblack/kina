@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -35,7 +34,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/devilsoulblack/kina/refs/heads/main/kina_logo.jpeg"/>
 
   <title>Espacio Kina - Escuela de Danza - Próximamente</title>
-<style>
+  <style>
     * {
       margin: 0;
       padding: 0;
@@ -48,15 +47,17 @@
       background: linear-gradient(135deg, #0404f5, #9303f2);
       color: #fff;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
       padding: 20px;
+      gap: 20px;
     }
 
-    .container .map-container {
+    .container, .map-container {
       background: rgba(0,0,0,0.4);
-      padding: 40px 30px;
+      padding: 30px 20px;
       border-radius: 12px;
       max-width: 400px;
       width: 100%;
@@ -140,7 +141,7 @@
       fill: #fff;
     }
 
-     iframe {
+    iframe {
       width: 100%;
       height: 200px;
       border: 0;
@@ -157,12 +158,12 @@
     }
   </style>
 </head>
-<body> 
+<body>
+  <!-- Primer container -->
   <div class="container">
-    <h1>Espacio Kina</h1>
-    <p>Escuela de Danza</p>
+    <h1>Espacio Kina Escuela de Danza</h1>
+    <p>¡Inscripciones abiertas en:</p><br>
     <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSelcrs-UptfxwqwQWbOpDU-u_ZXKXDmQkSyWpBYdcPL2SeqXQ/viewform?fbclid=PAZXh0bgNhZW0CMTEAAacQ2YSSpzCjyLKSwCEhX_pGVwF1W-Ms0V-edqTiF1mc94QyviFaAQCMGmN_Lg_aem_4jd3E83dcvxFxl-JBL-nTw">Inscribete Cupos Limitados !</a></p>
-    <p>¡Inaguramos en !</p>
     <div class="countdown" id="countdown">
       <div>
         <div id="days">00</div>
@@ -181,13 +182,13 @@
         <span>Segundos</span>
       </div>
     </div>
-  <!-- Botón de WhatsApp -->
+
+   <!-- Botón de WhatsApp -->
     <a class="whatsapp-btn" href="https://wa.me/56964808184" target="_blank">
       📞 Contáctanos por WhatsApp
     </a><br><br>
-    
 
-    <!-- Iconos sociales -->
+   <!-- Iconos sociales -->
     <div class="social-icons">
       <a href="https://www.instagram.com/espaciokina" target="_blank" aria-label="Instagram">
         <svg viewBox="0 0 24 24"><path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zm4.25 3.25a5.75 5.75 0 1 1 0 11.5 5.75 5.75 0 0 1 0-11.5zm0 1.5a4.25 4.25 0 1 0 0 8.5 4.25 4.25 0 0 0 0-8.5zm5.5-.875a1.125 1.125 0 1 1-2.25 0 1.125 1.125 0 0 1 2.25 0z"/></svg>
@@ -199,10 +200,9 @@
         <svg viewBox="0 0 24 24"><path d="M12.002 2.004c.658 0 1.31.054 1.949.16a5.46 5.46 0 0 0 3.37 3.347A9.123 9.123 0 0 1 19.998 6c.003.68-.053 1.365-.165 2.04-1.345-.056-2.64-.486-3.72-1.23v6.56c0 3.314-2.69 6.005-6.005 6.005S4.104 16.684 4.104 13.37c0-3.314 2.69-6.005 6.004-6.005.65 0 1.277.106 1.86.3v2.07a3.935 3.935 0 0 0-1.86-.47c-2.18 0-3.94 1.76-3.94 3.94s1.76 3.94 3.94 3.94 3.94-1.76 3.94-3.94V2.004z"/></svg>
       </a>
     </div>
-    
   </div>
-  
- <!-- Segundo container: Google Maps -->
+
+  <!-- Segundo container: Google Maps -->
   <div class="map-container">
     <h2 style="margin-bottom:15px; font-size:1.3rem;">📍 Cómo llegar</h2>
     <iframe 
@@ -212,9 +212,8 @@
       referrerpolicy="no-referrer-when-downgrade">
     </iframe>
   </div>
-  
- <script>
-    // Fecha objetivo del contador (puedes cambiar esta fecha)
+
+  <script>
     const countdownDate = new Date("2025-08-01T09:00:00").getTime();
 
     function updateCountdown() {
@@ -222,7 +221,7 @@
       const distance = countdownDate - now;
 
       if (distance < 0) {
-        document.getElementById('countdown').innerHTML = "<h2>¡Inaguración!</h2>";
+        document.getElementById('countdown').innerHTML = "<h2>¡Inscripciones abiertas!</h2>";
         clearInterval(interval);
         return;
       }
@@ -238,7 +237,7 @@
       document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
     }
 
-    updateCountdown(); // actualizar inmediatamente
+    updateCountdown();
     const interval = setInterval(updateCountdown, 1000);
   </script>
 </body>
