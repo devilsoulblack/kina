@@ -54,7 +54,7 @@
       padding: 20px;
     }
 
-    .container {
+    .container .map-container {
       background: rgba(0,0,0,0.4);
       padding: 40px 30px;
       border-radius: 12px;
@@ -140,6 +140,13 @@
       fill: #fff;
     }
 
+     iframe {
+      width: 100%;
+      height: 200px;
+      border: 0;
+      border-radius: 8px;
+    }
+
     @media (max-width: 400px) {
       h1 {
         font-size: 2rem;
@@ -195,14 +202,15 @@
     
   </div><br>
   </div>
-  <div class="container">
-<h1>Como llegar ?</h1><br>
-    <center><p><a title="Espacio Kina - Escuela de Danza" href="https://maps.app.goo.gl/A7zczdQD8MLdT3dx9" target="_blank">Cam. El Pangal 12, Puchuncav&iacute;, Valpara&iacute;so</a></p></center><br>
-<!-- Google Maps -->
-    
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3947.3459368785675!2d-71.41199942363328!3d-32.70701615982706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689b9007be9906b%3A0xae986cb97dc750e6!2sEspacio%20kina!5e1!3m2!1ses!2scl!4v1753851350178!5m2!1ses!2scl" width="450" height="350" style="border:0;" allowfullscreen="yes" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    
-
+ <!-- Segundo container: Google Maps -->
+  <div class="map-container">
+    <h2 style="margin-bottom:15px; font-size:1.3rem;">📍 Cómo llegar</h2>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.197972430463!2d-70.6482677!3d-33.4488897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c59b3e12c7af%3A0x32f4f9f1d73c61a5!2sSantiago%2C%20Chile!5e0!3m2!1ses!2scl!4v1722356056789!5m2!1ses!2scl" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
   </div>
  <script>
     // Fecha objetivo del contador (puedes cambiar esta fecha)
