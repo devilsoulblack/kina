@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horario y Precios - Kina Dance</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial Rounded MT Bold', sans-serif;
+      background: linear-gradient(to bottom right, #fcb1ff, #9ce9ff);
+      color: #333;
+    }
+    header {
+      text-align: center;
+      padding: 2rem;
+      font-size: 2rem;
+      background: linear-gradient(to right, #f96adf, #7cf9f7);
+      color: #fff;
+    }
+    .inscripcion {
+      text-align: center;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      width: 90%;
+      border-radius: 20px;
+      background: linear-gradient(to right, #fcb1ff, #ffe59f);
+      font-size: 1.3rem;
+      font-weight: bold;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+    .inscripcion a {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.7rem 1.5rem;
+      background-color: #ff6ec7;
+      color: white;
+      text-decoration: none;
+      border-radius: 15px;
+      font-size: 1rem;
+    }
+    .horario-container {
+      width: 90%;
+      max-width: 900px;
+      margin: 2rem auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .card-horario {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 1.5rem;
+      border-radius: 25px;
+      background: linear-gradient(to right, #ffe59f, #ffb2ef);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+      font-size: 1.1rem;
+      color: #4d2956;
+    }
+    .card-horario span {
+      flex: 1 1 22%;
+      text-align: center;
+      font-weight: bold;
+    }
+    .precios-container {
+      width: 90%;
+      max-width: 900px;
+      margin: 3rem auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .card-precio {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 1.2rem 2rem;
+      border-radius: 20px;
+      background: linear-gradient(to right, #ffb2ef, #ffe59f);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      font-size: 1.05rem;
+      color: #4d2956;
+    }
+    .card-precio span {
+      flex: 1 1 45%;
+    }
+    .map-container {
+      width: 100%;
+      margin: 4rem 0;
+    }
+    iframe {
+      width: 100%;
+      height: 350px;
+      border: none;
+    }
+    footer {
+      background: #00000033;
+      padding: 1rem;
+      text-align: center;
+    }
+    footer a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>HORARIOS Y VALORES - KINA DANCE</header>
+
+  <div class="inscripcion">
+    ¿Quieres inscribirte? ¡Hazlo aquí!
+    <br>
+    <a href="#">Formulario de inscripción</a>
+  </div>
+
+  <div class="horario-container">
+    <div class="card-horario">
+      <span>Lunes - 09:00 hrs</span>
+      <span>Danza Adultos</span>
+      <span>Para todas las edades</span>
+      <span>Profe Javiera</span>
+    </div>
+  </div>
+
+  <div class="precios-container">
+    <div class="card-precio">
+      <span>1 vez a la semana (4 clases al mes)</span>
+      <span>$25.000</span>
+    </div>
+    <div class="card-precio">
+      <span>2 veces a la semana (8 clases al mes)</span>
+      <span>$35.000</span>
+    </div>
+    <div class="card-precio">
+      <span>Clase de prueba</span>
+      <span>$7.000</span>
+    </div>
+    <div class="card-precio">
+      <span>Matrícula semestral</span>
+      <span>$8.000</span>
+    </div>
+    <div class="card-precio">
+      <span>10% de descuento por hermanos</span>
+      <span>Aplica automáticamente</span>
+    </div>
+    <div class="card-precio">
+      <span>Recuerda:</span>
+      <span>Pago antes de ingresar a clases</span>
+    </div>
+  </div>
+
+  <div class="map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3947.3459368785675!2d-71.41199942363328!3d-32.70701615982706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689b9007be9906b%3A0xae986cb97dc750e6!2sEspacio%20kina!5e1!3m2!1ses!2scl!4v1753851350178!5m2!1ses!2scl" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <footer>
+    <a href="https://instagram.com/kina.dance" target="_blank">Instagram</a>
+    <a href="#">Facebook</a>
+    <a href="#">TikTok</a>
+  </footer>
+</body>
+</html>
