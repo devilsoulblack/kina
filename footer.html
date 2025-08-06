@@ -4,7 +4,165 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Footer Llamativo</title>
-    <link rel="stylesheet" href="https://raw.githubusercontent.com/devilsoulblack/kina/refs/heads/main/style.css">
+    <style>
+        /* Variables de color para fácil personalización */
+:root {
+    --primary-color: #4a90e2; /* Azul brillante */
+    --secondary-color: #6a0572; /* Morado intenso */
+    --text-color: #f0f0f0; /* Gris claro para el texto */
+    --hover-color: #ffffff; /* Blanco para el hover */
+    --bg-color-start: #1c2b5f;
+    --bg-color-end: #3b006c;
+}
+
+/* Estilos base del footer */
+.footer {
+    background: linear-gradient(135deg, var(--bg-color-start), var(--bg-color-end));
+    color: var(--text-color);
+    padding: 60px 20px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Animación del degradado de fondo */
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, var(--bg-color-start), var(--bg-color-end), var(--bg-color-start));
+    background-size: 400% 400%;
+    animation: gradient-animation 20s ease infinite;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+@keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Contenedor principal para centrar el contenido */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: var(--hover-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.footer-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+.footer-section a:hover {
+    color: var(--primary-color);
+    transform: translateX(5px);
+}
+
+/* Estilos para los íconos de redes sociales */
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-5px) scale(1.1);
+}
+
+.social-icon.facebook:hover { background-color: #3b5998; }
+.social-icon.twitter:hover { background-color: #00acee; }
+.social-icon.instagram:hover { background-color: #e1306c; }
+.social-icon.linkedin:hover { background-color: #0077b5; }
+
+/* Estilos para la sección de copyright */
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+
+    .footer-section h3 {
+        display: block;
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+}
+</style
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
