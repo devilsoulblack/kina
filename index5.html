@@ -206,12 +206,41 @@
       font-size: 1.5em;
       text-decoration: none;
     }
+    footer {
+  background: linear-gradient(to right, #f96adf, #7cf9f7);
+  padding: 1.5rem 0;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.social-icons a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.1rem;
+  transition: transform 0.2s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+}
+
+.social-icons img {
+  width: 20px;
+  height: 20px;
+  filter: invert(1);
+}
+
   </style>
 </head>
 
 <body>
   <header>
-    Escuela de Danza
+    Espacio Kina - Escuela de Danza
   </header>
 <h2 class="titulo-seccion"><i class="fas fa-file-signature"></i> Inscripciones</h2>
   <section class="inscripcion">
@@ -359,14 +388,22 @@
     </div>
   </section>
 
-  <footer>
-    <p>Síguenos en redes sociales</p>
-    <div class="social-icons">
-      <a href="#">📘</a>
-      <a href="#">📷</a>
-      <a href="#">📱</a>
-    </div>
-  </footer>
+<footer>
+  <div class="social-icons">
+    <a href="https://www.instagram.com/espaciokina" target="_blank">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
+      Instagram
+    </a>
+    <a href="https://www.facebook.com/profile.php?id=61577720261462" target="_blank">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook">
+      Facebook
+    </a>
+    <a href="https://wa.me/56964808184" target="_blank">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp">
+      WhatsApp
+    </a>
+  </div>
+</footer>
 </body>
 
 </html>
