@@ -5,12 +5,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Escuela de Danza</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: linear-gradient(to bottom right, #f5f5f5, #e0e0e0);
       color: #333;
+    }
+
+    titulo-seccion {
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 60px;
+      margin-bottom: 30px;
+      background: linear-gradient(90deg, #00E3FF, #FF89DE);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      animation: aparecer 1s ease-out forwards;
+    }
+
+    .titulo-seccion i {
+      font-size: 2.2rem;
+      background: linear-gradient(90deg, #00E3FF, #FF89DE);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: parpadeo 1.5s infinite ease-in-out;
+    }
+
+    @keyframes parpadeo {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.6; transform: scale(1.2); }
+    }
+
+    @keyframes aparecer {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
     }
 
     header {
@@ -184,7 +221,7 @@
   </section>
 
   <section>
-    <div class="importante">HORARIOS</div>
+    <h2 class="titulo-seccion"><i class="fas fa-clock"></i> Horarios</h2>
     <div class="horario">
       <div class="clase">
         <div class="badge dia">LUNES</div>
