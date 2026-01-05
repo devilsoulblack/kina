@@ -542,6 +542,35 @@ opacity: 0.95;
 100% { transform: scale(1); }
 }
 
+.inscription-badge {
+position: absolute;
+top: 30px;
+right: -40px;
+transform: rotate(15deg);
+background: linear-gradient(135deg, #ff9a00, #ff4d00);
+color: white;
+padding: 15px 40px;
+font-size: 1.1em;
+font-weight: bold;
+border-radius: 40px;
+text-decoration: none;
+box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+z-index: 50;
+animation: pulse 2s infinite;
+}
+
+
+.inscription-badge:hover {
+transform: rotate(15deg) scale(1.05);
+}
+
+
+@keyframes pulse {
+0% { box-shadow: 0 0 0 0 rgba(255,77,0,0.7); }
+70% { box-shadow: 0 0 0 20px rgba(255,77,0,0); }
+100% { box-shadow: 0 0 0 0 rgba(255,77,0,0); }
+}
+
 /* Animación tipo llamado de atención */
 @keyframes pulseSummer {
   0% {
