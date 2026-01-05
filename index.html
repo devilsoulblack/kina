@@ -455,6 +455,44 @@
   margin-left: auto;
   margin-right: auto;
 }
+.summer-highlight {
+  background: linear-gradient(
+    135deg,
+    #00eaff,
+    #00ffd5,
+    #ffe066
+  );
+  color: #004b4b;
+  padding: 35px 25px;
+  border-radius: 30px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+  text-align: center;
+  animation: floatSummer 4s ease-in-out infinite;
+}
+
+.summer-highlight strong {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 900;
+  margin-bottom: 8px;
+}
+
+.summer-highlight p {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.summer-icon {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+/* Animación suave tipo ola */
+@keyframes floatSummer {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}
 
 </style>
 </head>
@@ -471,7 +509,7 @@
     <p>Reserva tu cupo</p>
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSelcrs-UptfxwqwQWbOpDU-u_ZXKXDmQkSyWpBYdcPL2SeqXQ/viewform?fbclid=PAZXh0bgNhZW0CMTEAAacQ2YSSpzCjyLKSwCEhX_pGVwF1W-Ms0V-edqTiF1mc94QyviFaAQCMGmN_Lg_aem_4jd3E83dcvxFxl-JBL-nTw">Formulario de Inscripción</a>
   </section>
-  
+
 <section class="kina-summer">
   <div class="summer-header">
     <h2>
@@ -514,10 +552,12 @@
     </div>
   </div>
 
-  <div class="summer-footer">
-    <strong>Desde el 5 al 30 de Enero</strong>
-    <p>Un lugar seguro y privado con profesores profesionales en arte y deporte.</p>
-  </div>
+<div class="summer-footer summer-highlight">
+  <div class="summer-icon">🌞</div>
+  <strong>Un lugar seguro y privado</strong>
+  <p>Con profesores profesionales en arte y deporte</p>
+</div>
+
 </section>
 
   <section>
