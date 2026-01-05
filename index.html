@@ -493,6 +493,36 @@
   50% { transform: translateY(-6px); }
   100% { transform: translateY(0); }
 }
+.summer-date-badge {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 10px 26px;
+  border-radius: 40px;
+  font-weight: 900;
+  font-size: 1.2rem;
+  color: #004b4b;
+  background: linear-gradient(
+    135deg,
+    #ffe066,
+    #00ffd5,
+    #00eaff
+  );
+  box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+  animation: pulseSummer 2.5s infinite;
+}
+
+/* Animación tipo llamado de atención */
+@keyframes pulseSummer {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.06);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 
 </style>
 </head>
@@ -511,6 +541,9 @@
   </section>
 
 <section class="kina-summer">
+  <div class="summer-date-badge">
+  🌴 Desde el 5 al 30 de Enero 🌊
+</div>
   <div class="summer-header">
     <h2>
       <span class="summer-small">5 a 10 años</span><br>
