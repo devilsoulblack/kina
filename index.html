@@ -533,6 +533,12 @@ animation: pulse 2s infinite;
 transform: rotate(15deg) scale(1.05);
 }
 
+@keyframes pulse {
+0% { box-shadow: 0 0 0 0 rgba(255,77,0,0.7); }
+70% { box-shadow: 0 0 0 20px rgba(255,77,0,0); }
+100% { box-shadow: 0 0 0 0 rgba(255,77,0,0); }
+}
+
 /* Animación tipo llamado de atención */
 @keyframes pulseSummer {
   0% {
