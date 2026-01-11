@@ -511,49 +511,20 @@
   animation: pulseSummer 2.5s infinite;
 }
 
-/* BADGE INSCRIPCIÓN + FECHAS VERANO */
-/* BADGE INSCRIPCIONES TIPO SOL */
-.badge-inscripcion {
-  position: fixed;
-  top: 90px;
-  right: 28px;
-
-  padding: 14px 22px;
-  border-radius: 999px;
-
-  background: linear-gradient(
-    135deg,
-    #f7c8e0,
-    #fae1a8,
-    #cde8f6
-  );
-
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #3b2c6e;
-
-  text-decoration: none;
-  z-index: 1000;
-
-  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+/* BADGE INSCRIPCIÓN */
+.badge-inscripcion{
+  position:fixed;
+  top:90px;
+  right:-60px;
+  background:var(--verano);
+  color:#3a1c00;
+  padding:14px 90px;
+  font-weight:700;
+  transform:rotate(45deg);
+  z-index:999;
+  box-shadow:0 10px 30px rgba(0,0,0,.3);
 }
 
-.badge-inscripcion:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 26px rgba(0,0,0,0.18);
-}
-
-@media (max-width: 768px) {
-  .badge-inscripcion {
-    top: 70px;
-    right: 16px;
-    font-size: 11px;
-    padding: 12px 18px;
-  }
-}
 
 
 .planes-verano {
