@@ -513,83 +513,74 @@
 
 /* BADGE INSCRIPCIÓN + FECHAS VERANO */
 /* BADGE INSCRIPCIONES TIPO SOL */
-.badge-inscripciones {
-position: fixed;
-top: 20px;
-right: 20px;
-width: 140px;
-height: 140px;
-border-radius: 50%;
-background: radial-gradient(circle at top left, #fff7b2, #ffd84d, #ff9f1c);
-color: #ff2f92;
-font-weight: 900;
-font-size: 0.9rem;
-display: flex;
-align-items: center;
-justify-content: center;
-text-align: center;
-text-transform: uppercase;
-line-height: 1.2;
-z-index: 9999;
-box-shadow:
-0 0 0 8px rgba(255, 223, 102, 0.5),
-0 0 0 16px rgba(255, 182, 39, 0.3),
-0 20px 40px rgba(0,0,0,0.35);
-animation: sunPulse 2.5s infinite ease-in-out;
+.badge-inscripcion {
+  position: fixed;
+  top: 90px;
+  right: 30px;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: radial-gradient(circle at center,
+    #fff6a3 0%,
+    #ffe066 35%,
+    #ffb703 65%,
+    #fb8500 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 900;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.1;
+  text-decoration: none;
+  box-shadow:
+    0 0 30px rgba(255,183,3,0.9),
+    0 0 60px rgba(251,133,0,0.6);
+  z-index: 9999;
+  animation: sunPulse 2.8s infinite ease-in-out;
 }
 
-
-.badge-inscripciones span {
-padding: 10px;
+/* ☀️ RAYOS DEL SOL */
+.badge-inscripcion::before {
+  content: "";
+  position: absolute;
+  inset: -18px;
+  background: repeating-conic-gradient(
+    #ffd60a 0deg,
+    #ffd60a 10deg,
+    transparent 10deg,
+    transparent 20deg
+  );
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0.9;
 }
 
+/* 🌞 Brillo exterior */
+.badge-inscripcion::after {
+  content: "";
+  position: absolute;
+  inset: -35px;
+  background: radial-gradient(circle,
+    rgba(255,214,10,0.5),
+    transparent 70%);
+  border-radius: 50%;
+  z-index: -2;
+}
 
+/* ✨ Animación */
 @keyframes sunPulse {
-0% { transform: scale(1); }
-50% { transform: scale(1.05); }
-100% { transform: scale(1); }
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
 }
 
 
-@media (max-width: 768px) {
-.badge-inscripciones {
-width: 110px;
-height: 110px;
-font-size: 0.75rem;
-top: 15px;
-right: 15px;
-}
-}
-}
-
-.inscription-badge {
-position: absolute;
-top: 30px;
-right: -40px;
-transform: rotate(15deg);
-background: linear-gradient(135deg, #ff9a00, #ff4d00);
-color: white;
-padding: 15px 40px;
-font-size: 1.1em;
-font-weight: bold;
-border-radius: 40px;
-text-decoration: none;
-box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-z-index: 50;
-animation: pulse 2s infinite;
-}
-
-
-.inscription-badge:hover {
-transform: rotate(15deg) scale(1.05);
-}
-
-
-@keyframes pulse {
-0% { box-shadow: 0 0 0 0 rgba(255,77,0,0.7); }
-70% { box-shadow: 0 0 0 20px rgba(255,77,0,0); }
-100% { box-shadow: 0 0 0 0 rgba(255,77,0,0); }
-}
 
 /* Animación tipo llamado de atención */
 @keyframes pulseSummer {
