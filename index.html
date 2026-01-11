@@ -593,6 +593,79 @@ transform: rotate(15deg) scale(1.05);
     transform: scale(1);
   }
 }
+.planes-verano {
+background: linear-gradient(180deg, #ffd6f0, #e7dcff);
+padding: 80px 20px;
+text-align: center;
+}
+
+
+.planes-title {
+font-size: 3em;
+color: #ff3fa4;
+font-weight: 900;
+margin-bottom: 40px;
+text-transform: uppercase;
+}
+
+
+.plan {
+max-width: 600px;
+margin: 18px auto;
+padding: 18px 26px;
+border-radius: 60px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-size: 1.1em;
+font-weight: 800;
+color: white;
+box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+animation: floatIn 0.8s ease;
+}
+
+
+.plan-text small {
+font-size: 0.75em;
+font-weight: 600;
+}
+
+
+.plan-price {
+background: rgba(255,255,255,0.85);
+color: #ff3fa4;
+padding: 6px 22px;
+border-radius: 40px;
+font-weight: 900;
+}
+
+
+.pink { background: linear-gradient(135deg, #ff5fcf, #ff8de3); }
+.aqua { background: linear-gradient(135deg, #00e5d4, #4df7eb); color:#004d4a; }
+.yellow { background: linear-gradient(135deg, #ffd166, #ffb703); color:#7a4a00; }
+
+
+.highlight { border: 4px solid #fff; }
+
+
+.important {
+border-radius: 20px;
+font-size: 1.05em;
+}
+
+
+.planes-footer {
+margin-top: 40px;
+font-size: 1.1em;
+color: #6b5ca5;
+font-weight: 700;
+}
+
+
+@keyframes floatIn {
+from { opacity: 0; transform: translateY(30px); }
+to { opacity: 1; transform: translateY(0); }
+}
 
 </style>
 </head>
@@ -611,57 +684,46 @@ transform: rotate(15deg) scale(1.05);
 
 
 
-<section class="kina-summer">
-  <div class="summer-date-badge">
-  🌴 Desde el 5 al 30 de Enero 🌊
-</div>
-  <div class="summer-header">
-    <br><p class="summer-tag">Desde 5 a 10 años</p>
-    <h1>
-      KINA <span class="summer-outline">SUMMER</span>
-    </h1>
-    <p class="summer-tag">3 bloques de pura diversión</p>
-  </div>
+<!-- SECCIÓN PLANES VERANO -->
+<section class="planes-verano">
+<h2 class="planes-title">☀️ Planes Temporada Verano ☀️</h2>
 
-  <div class="summer-cards">
-    <div class="summer-card">
-      <div class="bubble-title">1° BLOQUE</div>
-      <h3>JUEGOS</h3>
-      <span class="summer-time">10:00 a 11:00 hrs</span>
-      <p>
-        Dinámicas seguras que estimulan creatividad, coordinación y sonrisas desde el primer minuto.
-      </p>
-      <span class="summer-days">Lunes · Miércoles · Viernes</span>
-    </div>
 
-    <div class="summer-card">
-      <div class="bubble-title">2° BLOQUE</div>
-      <h3>EXPLORACIONES ARTÍSTICAS</h3>
-      <span class="summer-time">11:15 a 12:15 hrs</span>
-      <p>
-        Danza · Teatro · Rítmica · Visual.<br>
-        Un espacio para crear y expresarse.
-      </p>
-      <span class="summer-days">Lunes · Miércoles · Viernes</span>
-    </div>
-
-    <div class="summer-card">
-      <div class="bubble-title">3° BLOQUE</div>
-      <h3>CHAPUZÓN</h3>
-      <span class="summer-time">12:30 a 13:30 hrs</span>
-      <p>
-        Juegos para aprender a nadar, mejorar la técnica y ganar confianza.
-      </p>
-      <span class="summer-days">Lunes · Miércoles · Viernes</span>
-    </div>
-  </div>
-
-<div class="summer-footer summer-highlight">
-  <div class="summer-icon">🌞</div>
-  <strong>Un lugar seguro y privado</strong>
-  <p>Con profesores profesionales en arte y deporte</p>
+<div class="plan pink">
+<span class="plan-text">1 vez a la semana</span>
+<span class="plan-price">$25.000</span>
 </div>
 
+
+<div class="plan pink">
+<span class="plan-text">2 veces a la semana<br><small>(misma clase)</small></span>
+<span class="plan-price">$35.000</span>
+</div>
+
+
+<div class="plan pink highlight">
+<span class="plan-text">2 veces a la semana<br><small>(clases diferentes)</small><br><b>20% DESCUENTO</b></span>
+<span class="plan-price">$40.000</span>
+</div>
+
+
+<div class="plan aqua">
+<span class="plan-text">Clase de prueba</span>
+<span class="plan-price">$7.000</span>
+</div>
+
+
+<div class="plan pink">
+<span class="plan-text">10% descuento por hermanos</span>
+</div>
+
+
+<div class="plan yellow important">
+⚠️ El pago se realiza antes de ingresar a clases
+</div>
+
+
+<p class="planes-footer">Estos valores son los mismos para cualquier clase de <b>Espacio Kina</b></p>
 </section>
 
   <section>
