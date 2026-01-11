@@ -515,73 +515,46 @@
 /* BADGE INSCRIPCIONES TIPO SOL */
 .badge-inscripcion {
   position: fixed;
-  top: 88px;
+  top: 90px;
   right: 28px;
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  background: radial-gradient(circle at top,
-    #fff1b8 0%,
-    #ffe08a 40%,
-    #ffd166 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  text-decoration: none;
-  z-index: 1000;
 
-  /* Integración visual */
-  box-shadow:
-    0 8px 20px rgba(0,0,0,0.08);
-}
+  padding: 14px 22px;
+  border-radius: 999px;
 
-/* Texto más fino y elegante */
-.badge-inscripcion span {
+  background: linear-gradient(
+    135deg,
+    #f7c8e0,
+    #fae1a8,
+    #cde8f6
+  );
+
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #8a5a00; /* café/dorado suave */
-  line-height: 1.15;
+  color: #3b2c6e;
+
+  text-decoration: none;
+  z-index: 1000;
+
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-/* Rayos MUY sutiles */
-.badge-inscripcion::before {
-  content: "";
-  position: absolute;
-  inset: -10px;
-  background: repeating-conic-gradient(
-    rgba(255,209,102,0.4) 0deg,
-    rgba(255,209,102,0.4) 8deg,
-    transparent 8deg,
-    transparent 18deg
-  );
-  border-radius: 50%;
-  z-index: -1;
-  opacity: 0.35;
-}
-
-/* Animación mínima (respira, no grita) */
-.badge-inscripcion {
-  animation: sunFloat 4s ease-in-out infinite;
-}
-
-@keyframes sunFloat {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-4px);
-  }
-}
-
-/* Hover elegante */
 .badge-inscripcion:hover {
-  box-shadow:
-    0 10px 26px rgba(0,0,0,0.12);
-  transform: scale(1.03);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 26px rgba(0,0,0,0.18);
 }
+
+@media (max-width: 768px) {
+  .badge-inscripcion {
+    top: 70px;
+    right: 16px;
+    font-size: 11px;
+    padding: 12px 18px;
+  }
+}
+
 
 .planes-verano {
 background: linear-gradient(180deg, #ffd6f0, #e7dcff);
