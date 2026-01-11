@@ -512,44 +512,54 @@
 }
 
 /* BADGE INSCRIPCIÓN + FECHAS VERANO */
-.badge-inscripcion {
+/* BADGE INSCRIPCIONES TIPO SOL */
+.badge-inscripciones {
 position: fixed;
-top: 25px;
-right: -60px;
-transform: rotate(15deg);
-z-index: 9999;
-background: linear-gradient(135deg, #ff9a00, #ff4fd8);
-color: #fff;
-padding: 16px 60px;
-border-radius: 50px;
+top: 20px;
+right: 20px;
+width: 140px;
+height: 140px;
+border-radius: 50%;
+background: radial-gradient(circle at top left, #fff7b2, #ffd84d, #ff9f1c);
+color: #ff2f92;
 font-weight: 900;
-font-size: 1rem;
+font-size: 0.9rem;
+display: flex;
+align-items: center;
+justify-content: center;
 text-align: center;
-box-shadow: 0 12px 30px rgba(0,0,0,0.35);
-animation: pulse 2s infinite;
+text-transform: uppercase;
+line-height: 1.2;
+z-index: 9999;
+box-shadow:
+0 0 0 8px rgba(255, 223, 102, 0.5),
+0 0 0 16px rgba(255, 182, 39, 0.3),
+0 20px 40px rgba(0,0,0,0.35);
+animation: sunPulse 2.5s infinite ease-in-out;
 }
 
 
-.badge-inscripcion span {
-display: block;
-font-size: 0.75rem;
-font-weight: 700;
-letter-spacing: 1px;
+.badge-inscripciones span {
+padding: 10px;
 }
 
 
-.badge-inscripcion span {
-display: block;
-font-size: 0.75rem;
-font-weight: 600;
-opacity: 0.95;
-}
-
-
-@keyframes pulse {
+@keyframes sunPulse {
 0% { transform: scale(1); }
-50% { transform: scale(1.08); }
+50% { transform: scale(1.05); }
 100% { transform: scale(1); }
+}
+
+
+@media (max-width: 768px) {
+.badge-inscripciones {
+width: 110px;
+height: 110px;
+font-size: 0.75rem;
+top: 15px;
+right: 15px;
+}
+}
 }
 
 .inscription-badge {
